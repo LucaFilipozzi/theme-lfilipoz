@@ -19,11 +19,11 @@ function fish_prompt
   fmt normal yellow "$user"
   fmt normal normal '@'
   fmt normal green "$host"
-  fmt normal normal ' '
+  fmt normal normal ':'
 
   # prompt component: path
   fmt normal blue "$path"
-  fmt normal normal ' '
+  fmt normal normal ''
 
   # prompt component: mark
   $nonzero_exit; and set fgc red; or set fgc white
